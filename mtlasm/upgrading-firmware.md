@@ -1,4 +1,4 @@
-# Firmware upgrade workflows for Montreal Assembly Pedals
+# Firmware upgrade workflows for Montreal Assembly pedals
 
 Applicable for the following:
 
