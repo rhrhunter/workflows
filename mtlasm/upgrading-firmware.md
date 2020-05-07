@@ -48,7 +48,13 @@ Listing devices
 $ dfu-util -v -l
 ```
 
-Uploading firmware (new-firmware.dfu) for device found at slot 0.
+Downloading existing firmware (for backing up purposes) for device in slot 0
+
+```bash
+$  dfu-util -a 0 -D currently-installed-firmware.dfu
+```
+
+Uploading a new firmware file (e.g. new-firmware.dfu) for device found at slot 0.
 
 ```bash
 $ dfu-util -a 0 -U new-firmware.dfu
