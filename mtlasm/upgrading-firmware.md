@@ -9,13 +9,13 @@ Applicable for the following:
 For macOS, install the dfu utility.
 
 ```bash
-brew install dfu-util
+$ brew install dfu-util
 ```
 
 Tool help
 
 ```bash
-# dfu-util --help
+$ dfu-util --help
 Usage: dfu-util [options] ...
   -h --help			Print this help message
   -V --version			Print the version number
@@ -45,11 +45,11 @@ Usage: dfu-util [options] ...
 Listing devices
 
 ```bash
-dfu-util -v -l
+$ dfu-util -v -l
 ```
 
 Uploading firmware (new-firmware.dfu) for device found at slot 0.
 
 ```bash
-dfu-util -a 0 -U new-firmware.dfu
+$ dfu-util -a 0 -U new-firmware.dfu
 ```
