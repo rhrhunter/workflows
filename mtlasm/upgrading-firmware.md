@@ -1,4 +1,4 @@
-#Firmware upgrade workflows for Montreal Assembly Pedals
+# Firmware upgrade workflows for Montreal Assembly Pedals
 
 Applicable for the following:
 
@@ -12,10 +12,10 @@ You'll need:
 
 1. One of the mtlasm pedals listed above
 2. A firmware you want to upload
-3. dfu-util
+3. ```dfu-util``` for uploading/downloading firmware to the pedal
 4. a USB-to-miniUSB cable
 
-## dfu-util
+## Using ```dfu-util```
 
 For macOS, install the dfu utility.
 
