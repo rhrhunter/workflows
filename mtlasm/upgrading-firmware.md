@@ -1,10 +1,21 @@
-Firmware upgrade workflows for Montreal Assembly Pedals
--------------------------------------------------------
+#Firmware upgrade workflows for Montreal Assembly Pedals
 
 Applicable for the following:
 
 * 856 For Z
 * Count 2 Five
+
+
+## Requirements
+
+You'll need:
+
+1. One of the mtlasm pedals listed above
+2. A firmware you want to upload
+3. dfu-util
+4. a USB-to-miniUSB cable
+
+## dfu-util
 
 For macOS, install the dfu utility.
 
@@ -12,7 +23,7 @@ For macOS, install the dfu utility.
 $ brew install dfu-util
 ```
 
-Tool help
+Displaying help
 
 ```bash
 $ dfu-util --help
@@ -42,16 +53,16 @@ Usage: dfu-util [options] ...
                 DfuSe file (.dfu) downloads
 ```
 
-Listing devices
+Listing devices connected to the system.
 
 ```bash
 $ dfu-util -v -l
 ```
 
-Downloading existing firmware (for backing up purposes) from the device in slot 0
+Downloading existing firmware (for backing up purposes) from the device in slot 0.
 
 ```bash
-$  dfu-util -a 0 -D currently-installed-firmware.dfu
+$ dfu-util -a 0 -D currently-installed-firmware.dfu
 ```
 
 Uploading a new firmware file (e.g. new-firmware.dfu) to the device found at slot 0.
